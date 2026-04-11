@@ -18,6 +18,8 @@ import { ChartExample } from '../types.ts';
 import AreaChartNavExample from './AreaChartNavExample';
 import AreaChartWithCustomEvents from './AreaChartWithCustomEvents';
 import areaChartWithCustomEventsSource from './AreaChartWithCustomEvents?raw';
+import AreaChartCustomAnimationExample from './AreaChartCustomAnimationExample.tsx';
+import AreaChartCustomAnimationExampleSource from './AreaChartCustomAnimationExample.tsx?raw';
 
 export { AreaChartNavExample };
 
@@ -69,5 +71,10 @@ export const areaChartExamples: Record<string, ChartExample> = {
     name: 'Area Chart With Custom Events',
     description:
       'The example demonstrates how to add custom event handlers to an Area Chart and how to write proper types.',
+  },
+  AreaChartCustomAnimation: {
+    Component: AreaChartCustomAnimationExample,
+    sourceCode: AreaChartCustomAnimationExampleSource,
+    name: 'Custom Animation Example',
   },
 };

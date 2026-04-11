@@ -1,7 +1,17 @@
 import React, { FC } from 'react';
 import { describe, expect, it, Mock, test, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
-import { Area, Brush, CurveProps, DefaultZIndexes, DotItemDotProps, Tooltip, XAxis, YAxis } from '../../src';
+import {
+  Area,
+  AreaRevealShape,
+  Brush,
+  CurveProps,
+  DefaultZIndexes,
+  DotItemDotProps,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from '../../src';
 import { BaseValue, computeArea, getBaseValue } from '../../src/cartesian/Area';
 import {
   allCartesianChartsExcept,
@@ -797,6 +807,7 @@ describe.each(chartsThatSupportArea)('<Area /> as a child of $testName', ({ Char
             isAnimationActive: 'auto',
             label: false,
             legendType: 'line',
+            shape: AreaRevealShape,
             stroke: '#3182bd',
             strokeWidth: 1,
             type: 'linear',
@@ -855,6 +866,7 @@ describe.each(chartsThatSupportArea)('<Area /> as a child of $testName', ({ Char
             isAnimationActive: 'auto',
             label: false,
             legendType: 'line',
+            shape: AreaRevealShape,
             stroke: '#3182bd',
             strokeWidth: 1,
             type: 'linear',

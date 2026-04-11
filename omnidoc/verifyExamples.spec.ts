@@ -200,6 +200,10 @@ describe('Documentation Examples Coverage', () => {
     'useAnimationProgress',
     'AnimationHandle',
     'AnimationStatus',
+    'AreaRevealShape',
+    'AreaShapeAnimationProps',
+    'LineDrawShape',
+    'LineShapeAnimationProps',
   ];
 
   describe.each(allExports.filter(name => !exportsThatNeedExamples.includes(name)))('Export: %s', exportName => {
